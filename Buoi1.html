@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            font-family: Roboto, serif;
+            padding: 30px;
+            box-sizing: border-box;
+            width: 900px;
+            height: 2000px;
+            border: solid red 1px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box {
+            position: relative;
+            width: 146px;
+            height: 126px;
+            background: #C4C4C4;
+        }
+
+        .col-1 {
+            background: #EB5757;
+            width: 55px;
+            height: 55px;
+        }
+
+        .col-2 {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            background: #F2994A;
+            width: 55px;
+            height: 55px;
+        }
+
+        .diamond-main {
+            display: flex;
+            margin-top: 30px;
+        }
+
+        .diamond-main_1 {
+            margin-top: 30px;
+        }
+
+        .diamond_1 {
+            margin-bottom: 20px;
+            width: 55px;
+            height: 55px;
+            background: #F2994A;
+            transform: rotate(45deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .diamond_10 {
+            margin-top: 20px;
+            width: 55px;
+            height: 55px;
+            background: #2F80ED;
+            transform: rotate(45deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .diamond_2 {
+            width: 55px;
+            height: 55px;
+            background: #9B51E0;
+            transform: rotate(45deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .diamond_3 {
+            margin-bottom: 20px;
+            width: 55px;
+            height: 55px;
+            background: #EB5757;
+            transform: rotate(45deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .diamond_4 {
+            width: 55px;
+            height: 55px;
+            background: #2F80ED;
+            transform: rotate(45deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hhh {
+            margin-left: 20px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(7, 55px);
+            grid-template-rows: repeat(2, 55px);
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .grid-item:nth-child(odd):nth-of-type(-n+7) {
+            background-color: orangered;
+        }
+
+        .grid-item {
+            width: 55px;
+            height: 55px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .grid-item1:nth-child(odd):nth-of-type(-n+14) {
+            background-color: orangered;
+        }
+
+        .grid-item1 {
+            width: 55px;
+            height: 55px;
+            border-radius: 0 0 10px 10px;
+        }
+        .login-container {
+            background-color: #f88b3d;
+            width: 339px;
+            height: 339px;
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+        }
+
+        .icon-user img {
+            width: 49px;
+            height: 49px;
+        }
+
+        .input-container input {
+            width: 195px;
+            height: 41px;
+            margin: 10px 0;
+            border: 2px solid white;
+            border-radius: 10px;
+            background-color: transparent;
+            color: white;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .input-container input::placeholder {
+            color: white;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .login-button {
+            width: 195px;
+            height: 40px;
+            background-color: #8e44ad;
+            color: white;
+            font-size: 12px;
+            padding: 15px 0;
+            box-shadow: 0 3px 10px black;
+            border: none;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .forgot-password {
+            margin-top: 20px;
+            margin-left: 38%;
+        }
+
+        .forgot-password a {
+            color: #FFFBFB;
+            text-decoration: none;
+            font-size: 10px;
+        }
+
+        .forgot-password a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="box">
+        <div class="col-1"></div>
+        <div class="col-2"></div>
+    </div>
+    <div class="diamond-main">
+        <div>
+            <div class="diamond_1"></div>
+            <div class="diamond_2"></div>
+        </div>
+        <div class="hhh">
+            <div class="diamond_3"></div>
+            <div class="diamond_4"></div>
+        </div>
+    </div>
+    <div class="diamond-main_1">
+        <div class="diamond_10"></div>
+        <div class="diamond_10"></div>
+        <div class="diamond_10"></div>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+
+        <div class="grid-item1"></div>
+        <div class="grid-item1"></div>
+        <div class="grid-item1"></div>
+        <div class="grid-item1"></div>
+        <div class="grid-item1"></div>
+        <div class="grid-item1"></div>
+        <div class="grid-item1"></div>
+    </div>
+    <div class="login-container">
+        <div class="icon-user">
+            <img src="Frame.png" alt="User Icon"/>
+        </div>
+        <div class="input-container">
+            <input type="text" placeholder="USERNAME">
+            <input type="password" placeholder="PASSWORD">
+        </div>
+        <div class="button-container">
+            <button class="login-button">
+                LOGIN
+            </button>
+        </div>
+        <div class="forgot-password">
+            <a href="#">Forgot password?</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
