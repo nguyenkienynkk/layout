@@ -116,7 +116,7 @@
             padding: 20px;
         }
 
-        .grid-item:nth-child(odd):nth-of-type(-n+7) {
+        .grid-item:nth-child(odd) {
             background-color: orangered;
         }
 
@@ -126,11 +126,11 @@
             border-radius: 10px 10px 0 0;
         }
 
-        .grid-item1:nth-child(odd):nth-of-type(-n+14) {
+        .grid-item_1:nth-child(odd) {
             background-color: orangered;
         }
 
-        .grid-item1 {
+        .grid-item_1 {
             width: 55px;
             height: 55px;
             border-radius: 0 0 10px 10px;
@@ -177,6 +177,7 @@
             color: white;
             font-size: 12px;
             padding: 15px 0;
+            border-radius: 4%;
             box-shadow: 0 3px 10px black;
             border: none;
             cursor: pointer;
@@ -228,22 +229,25 @@
         <div class="grid-item"></div>
         <div class="grid-item"></div>
         <div class="grid-item"></div>
-
-        <div class="grid-item1"></div>
-        <div class="grid-item1"></div>
-        <div class="grid-item1"></div>
-        <div class="grid-item1"></div>
-        <div class="grid-item1"></div>
-        <div class="grid-item1"></div>
-        <div class="grid-item1"></div>
+        <div class="grid-item_1"></div>
+        <div class="grid-item_1"></div>
+        <div class="grid-item_1"></div>
+        <div class="grid-item_1"></div>
+        <div class="grid-item_1"></div>
+        <div class="grid-item_1"></div>
+        <div class="grid-item_1"></div>
     </div>
     <div class="login-container">
         <div class="icon-user">
             <img src="Frame.png" alt="User Icon"/>
         </div>
         <div class="input-container">
-            <input type="text" placeholder="USERNAME">
-            <input type="password" placeholder="PASSWORD">
+            <label>
+                <input type="text" placeholder="USERNAME">
+            </label>
+            <label>
+                <input type="password" placeholder="PASSWORD">
+            </label>
         </div>
         <div class="button-container">
             <button class="login-button">
