@@ -293,9 +293,14 @@
 }
 
 .close-button {
+    margin-right: 30px;
+    margin-top: 10px;
     float: right;
-    font-size: 20px;
+    font-size: 40px;
     font-weight: bold;
+    border: none;
+    background: #FFFF;
+    color: #8CC5F9;
     cursor: pointer;
 }
 
@@ -453,7 +458,6 @@
     border-radius: 5px;
     font-size: 14px;
 }
-
 .card-title {
     color: #6c8fe0;
     font-size: 24px;
