@@ -34,8 +34,6 @@ body, html {
 .blue {
     background-color: #2e8ef7;
 }
-
-
 /*bai2*/
 .circle {
     width: 481px;
@@ -148,9 +146,8 @@ body, html {
 }
 
 .happenstance {
-    margin-left: 63px;
-    margin-right: 81px;
-    margin-top: 25px;
+    max-width: 1700px;
+    margin: 0 auto;
     font-family: "Unica One", serif;
     position: relative;
 }
@@ -303,6 +300,11 @@ main {
     justify-content: center;
     align-items: center;
     gap: 20px;
+}
+.add-to-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .anh {
