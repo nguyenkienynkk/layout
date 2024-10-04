@@ -131,6 +131,10 @@ body, html {
 .cart-icon {
     position: relative;
 }
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
 
 .cart-badge {
     position: absolute;
