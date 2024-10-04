@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 300px;
+    height: 500px;
+    background-color: #c0c0c0;
+    display: grid;
+    grid-template-columns: 50px 150px;
+    grid-template-rows: repeat(3, 50px);
+    gap: 10px 20px;
+    justify-content: center;
+    align-content: center;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+}
+
+.red {
+    background-color: #f15b5b;
+}
+
+.blue {
+    background-color: #2e8ef7;
+}
+
+
+/*bai2*/
+.circle {
+    width: 481px;
+    height: 481px;
+    border-radius: 50%;
+    border: 31px solid orange;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.shape {
+    background-color: #ff4d4d;
+    position: absolute;
+}
+
+.top, .bottom {
+    width: 96px;
+    height: 184px;
+    border-radius: 50px;
+}
+
+.left, .right {
+    width: 184px;
+    height: 96px;
+    border-radius: 50px;
+}
+
+.top {
+    top: 20px;
+}
+
+.bottom {
+    bottom: 20px;
+}
+
+.left {
+    left: 55px;
+}
+
+.right {
+    right: 55px;
+}
+
+/* bai1 */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left h1 {
+    font-size: 20px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.navbar-center ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 76px;
+}
+
+.navbar-center ul li {
+    display: inline;
+}
+
+.navbar-center ul li a {
+    font-size: 24px;
+    text-decoration: none;
+    font-family: Unica One, serif;
+    color: #000;
+    font-weight: bold;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-right i {
+    font-size: 20px;
+}
+
+.cart-icon {
+    position: relative;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 8px;
+    font-size: 12px;
+}
+
+.happenstance {
+    margin-left: 63px;
+    margin-right: 81px;
+    margin-top: 25px;
+    font-family: "Unica One", serif;
+    position: relative;
+    height: 1200px;
+}
+
+main {
+    height: 800px;
+}
+
+.grid-item {
+    width: 48px;
+    height: 48px;
+    border: 1px solid rgba(19, 18, 18, 0.13);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.grid-main {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 20px;
+    margin-top: 28px;
+    margin-bottom: 55px;
+}
+
+.size {
+    font-size: 20px;
+}
+
+.grid-item-color_1 {
+    width: 48px;
+    height: 48px;
+    background: #B6A179;
+}
+
+.grid-item-color_2 {
+    width: 48px;
+    height: 48px;
+    background: #272425;
+}
+
+.grid-item-color_3 {
+    width: 48px;
+    height: 48px;
+    background: #6389CB;
+}
+
+.grid-item-color_4 {
+    width: 48px;
+    height: 48px;
+    background: #F2C758;
+}
+
+.select {
+    float: left;
+    margin-top: 99px;
+}
+
+.grid-color {
+    display: flex;
+    gap: 20px;
+    margin-top: 28px;
+}
+
+.color {
+    font-size: 20px;
+}
+
+/*men-sandal*/
+.men {
+    font-size: 20px;
+    font-family: "Helvetica Neue", serif;
+    margin-bottom: 13px;
+}
+
+.label-sandals {
+    font-size: 72px;
+    margin-bottom: 24px;
+}
+
+.description-sandals {
+    font-size: 20px;
+    font-family: "Helvetica Neue", serif;
+    opacity: 50%;
+    line-height: 30px;
+}
+
+.men-sandals {
+    float: right;
+    width: 25%;
+    margin-top: 239px;
+}
+
+/**/
+.scroll {
+    position: absolute;
+    left: -50px;
+    top: 726px;
+    rotate: 90deg;
+    font-size: 24px;
+}
+
+.social {
+    position: absolute;
+    top: 708px;
+    right: -50px;
+    gap: 30px;
+    rotate: 90deg;
+}
+
+.social svg {
+    rotate: -90deg;
+}
+.rela {
+    margin-left:24px;
+}
+
+/**/
+.chan {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-to-cart span {
+    font-size: 24px;
+    font-family: "Unica One", serif;
+}
+
+.pre-next {
+    display: flex;
+    gap: 50px;
+}
+
+.prev span {
+    font-size: 20px;
+}
+
+.next span {
+    font-size: 20px;
+}
+
+.video {
+    font-size: 20px;
+}
+
+.play-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.anh {
+    position: absolute;
+    display: flex;
+    left: 311px;
+    z-index: -2;
+}
