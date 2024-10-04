@@ -309,6 +309,6 @@ main {
 .anh {
     position: absolute;
     display: flex;
-    left: 311px;
+    left: 200px;
     z-index: -2;
 }
