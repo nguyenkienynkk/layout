@@ -310,7 +310,7 @@ main {
 /**/
 .footer {
     display: flex;
-    margin: 400px 200px 0 200px;
+    margin: 400px 200px 50px 200px;
     justify-content: space-between;
 }
 
@@ -474,7 +474,7 @@ main {
         justify-content: space-between;
         gap: 40px;
         width: 100%;
-        margin: 100px auto 0 auto;
+        margin: 100px auto 50px auto;
     }
 
     .next img {
@@ -527,6 +527,9 @@ main {
     .add-to-cart span{
         font-size: 16px;
     }
+    .color {
+        font-size: 20px;
+    }
 
 }
 
@@ -538,10 +541,19 @@ main {
         width: 100%;
         overflow-x: hidden;
     }
+    .scroll {
+        display: none;
+    }
 
     .navbar {
         flex-direction: column;
-        align-items: center;
+        position: relative;
+    }
+    .select-color {
+        margin: 50px 0;
+    }
+    .icon img {
+        margin-right: 0;
     }
 
     .grid-main button {
@@ -560,10 +572,20 @@ main {
     }
 
     .navbar-right {
+        position: absolute;
         margin-top: 30px;
+        top: 42px;
+        right: 34px;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: flex-end;
         width: 100%;
+    }
+    .color {
+        font-size: 20px;
+    }
+    .select-size {
+        margin-top: 50px;
+        width: 50%;
     }
 
     .image {
@@ -576,28 +598,28 @@ main {
         width: 600px;
     }
 
-    .scroll {
-        top: 800px;
-    }
-
     .grid-main button {
         width: 40px;
         height: 40px;
+    }
+    .flexible {
+        flex-direction: column;
+        margin: 0 auto;
     }
 
     .grid-main {
         margin-right: 20px;
     }
-
     .social {
-        display: none;
+        top: 400px;
     }
-
+    .label-sandals {
+        font-size: 60px;
+    }
     .footer {
         width: 100%;
         display: flex;
-        margin-top: 350px;
-        margin-left: 10px;
+        margin: 350px 0 50px 10px;
         justify-content: center;
         align-items: center;
         gap: 70px;
@@ -606,7 +628,24 @@ main {
     .next img {
         margin-top: 5px;
     }
-
+    .add-to-cart span{
+        font-size: 16px;
+    }
+    .prev span {
+        font-size: 16px;
+    }
+    .next span {
+    font-size: 16px;
+    }
+    .video {
+        font-size: 16px;
+    }
+    div ul li a {
+        font-size: 20px;
+    }
+    div ul {
+        gap: 30px;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -629,16 +668,13 @@ main {
     }
 
     div ul {
-        flex: 1 1 auto;
         flex-flow: column wrap;
         flex-direction: row;
         text-align: center;
-        gap: 10px;
+        gap: 20px;
     }
-
-    .icon {
-        display: flex;
-        flex-direction: row;
+    .icon img:first-child {
+        margin-right: 20px;
     }
 
     .navbar-right {
@@ -658,8 +694,11 @@ main {
         height: auto;
     }
 
-    .scroll {
-        top: 800px;
+    .scroll .social {
+        top: 850px;
+    }
+    div ul li a {
+        font-size: 20px;
     }
 
     .grid-main button {
@@ -669,14 +708,11 @@ main {
     }
 
     .footer {
-        width: 500px;
-        height: auto;
+        width: 100%;
         display: flex;
-        flex-flow: row;
-        margin-top: 350px;
-        justify-content: space-between;
+        justify-content: space-around;
+        margin: 400px 0 50px 0;
         align-items: center;
-        gap: 50px;
     }
 
     .next img {
@@ -698,7 +734,7 @@ main {
     }
 
     .label-sandals {
-        font-size: 60px;
+        font-size: 55px;
     }
 
     .description-sandals {
@@ -720,10 +756,46 @@ main {
         height: 50px;
     }
 
-    .flexible {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 50px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    div ul {
+        gap: 30px;
+    }
+    .image {
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .image img {
+        width: 850px;
+        height: auto;
+    }
+    .footer {
+        margin: 400px 200px 50px 200px;
+    }
+    .social, .scroll {
+        top: 870px;
+    }
+
+}
+@media only screen and (min-width: 1200px) and (max-width: 1444px) {
+
+    .image {
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .image img {
+        width: 900px;
+        height: auto;
     }
 }
+@media only screen and (min-width: 1444px) and (max-width: 1600px) {
 
+    .image {
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+}
