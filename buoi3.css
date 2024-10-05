@@ -45,7 +45,9 @@ body, html {
     place-items: center;
     position: relative;
 }
-
+.color {
+    font-size: 20px;
+}
 .shape {
     background-color: #ff4d4d;
     position: absolute;
