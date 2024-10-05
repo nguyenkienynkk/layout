@@ -3,10 +3,10 @@
 .container {
     width: 100%;
     background: white;
-    border: solid 1px red;
 }
 
 .content {
+    position: relative;
     width: 100%;
     max-width: 1700px;
     display: grid;
@@ -15,9 +15,8 @@
 }
 
 .item {
-    background: gold;
-    border: 1px solid red;
     min-height: 50px;
+    z-index: 1;
 }
 
 .item_1 {
@@ -63,7 +62,7 @@ div ul li a {
     align-items: center;
     gap: 20px;
     justify-content: flex-end;
-    margin-right: 22%;
+    padding-right: 22%;
 }
 
 .item_3 img:nth-child(1) {
@@ -84,8 +83,12 @@ div ul li a {
     width: 40px;
     height: 40px;
     font-size: 14px;
-    border: 1px solid rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(134, 131, 131, 0.4);
     background: white;
+}
+
+.grid-main button:hover {
+    background: rgb(252, 247, 247)
 }
 
 .grid-main {
@@ -166,7 +169,7 @@ div ul li a {
 }
 
 .item_4, .item_6 {
-    margin-top: 99px;
+    padding-top: 99px;
 }
 
 .item_7, .item_8, .item_9 {
@@ -181,18 +184,25 @@ div ul li a {
     place-content: center;
 }
 
-.prev span, .next span, .video,.add-to-cart span {
+.prev span, .next span, .video, .add-to-cart span {
     font-family: "Unica One", sans-serif;
+}
+
+.add-to-cart span, .pre-next span, .play-video {
+    font-size: 24px;
 }
 .add-to-cart span {
     font-weight: bold;
 }
+
 .prev span {
-    margin-left: 20%;
+    margin-left: 15%;
 }
+
 .next span {
-    margin-left: 20%;
+    margin-left: 15%;
 }
+
 .play-video {
     display: flex;
     justify-content: center;
@@ -204,7 +214,35 @@ div ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 4%;
+    margin-top: 2%;
 }
 
+.social {
+    position: absolute;
+    top: 708px;
+    right: 10px;
+    gap: 30px;
+    rotate: 90deg;
+}
 
+.scroll {
+    position: absolute;
+    left: -1%;
+    top: 708px;
+    rotate: 90deg;
+    font-size: 24px;
+    font-family: "Unica One", sans-serif;
+}
+
+.image {
+    position: absolute;
+    display: flex;
+    top: 90%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+}
+
+.image img {
+    object-fit: cover;
+    width: 1107px;
+}
