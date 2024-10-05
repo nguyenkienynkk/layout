@@ -19,8 +19,7 @@
     z-index: 1;
 }
 
-.item_1 {
-    z-index: 1;
+.item:nth-child(1) {
     display: grid;
     place-content: center;
 }
@@ -52,12 +51,12 @@ div ul li a {
     padding-left: 63px;
 }
 
-.item_2 {
+.item:nth-child(2) {
     display: grid;
     place-content: center;
 }
 
-.item_3 {
+.item:nth-child(3) {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -65,9 +64,10 @@ div ul li a {
     padding-right: 22%;
 }
 
-.item_3 img:nth-child(1) {
+.item:nth-child(3) img:nth-child(1) {
     margin-top: 10px;
 }
+
 
 .size {
     font-size: 20px;
@@ -168,15 +168,15 @@ div ul li a {
     line-height: 30px;
 }
 
-.item_4, .item_6 {
+.item:nth-child(4), .item:nth-child(6) {
     padding-top: 99px;
 }
 
-.item_7, .item_8, .item_9 {
+.item:nth-child(7), .item:nth-child(8), .item:nth-child(9) {
     margin-top: 430px;
 }
 
-.pre-next {
+.item:nth-child(7) .pre-next {
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -184,7 +184,7 @@ div ul li a {
     place-content: center;
 }
 
-.prev span, .next span, .video, .add-to-cart span {
+.item:nth-child(7) .prev span, .next span, .video, .add-to-cart span {
     font-family: "Unica One", sans-serif;
 }
 
@@ -200,14 +200,14 @@ div ul li a {
     margin-left: 15%;
 }
 
-.play-video {
+.item:nth-child(8) .play-video {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
 
-.add-to-cart {
+.item:nth-child(9) .add-to-cart {
     display: flex;
     justify-content: center;
     align-items: center;
