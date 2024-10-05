@@ -328,7 +328,7 @@ body, html {
         transform: translate(-50%,-50%);
         font-size: 20px;
     }
-    .prev svg {
+    .prev img {
         margin-top: 15px;
     }
 
@@ -342,7 +342,7 @@ body, html {
         transform: translate(50%,-50%);
         font-size: 20px;
     }
-    .next svg {
+    .next img {
         position: absolute;
         top: 70%;
         right: 50%;
@@ -375,7 +375,7 @@ body, html {
     }
     .image img {
         object-fit: cover;
-        width: 1107px;
+        width: 1301px;
     }
 
 /* Responsive */
@@ -417,10 +417,24 @@ body, html {
         margin: 400px 0 5px 5px;
         height: auto;
     }
+    .flexible {
+        margin: 0 auto;
+    }
+    .label-sandals {
+        font-size: 50px;
+    }
+    .men-sandals {
+        padding-right: 20px;
+    }
 
     .grid-main {
-        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
         gap: 5px;
+    }
+    .grid-main button {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
     }
 
     /* Footer */
@@ -433,7 +447,7 @@ body, html {
         width: 100%;
         margin: 0;
     }
-    .next svg {
+    .next img {
         margin-top: 5px;
     }
     .icon img:first-child {
@@ -478,7 +492,7 @@ body, html {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 600px) and (max-width: 768px) {
     body, html {
         padding: 0;
         margin: 0;
@@ -540,8 +554,119 @@ body, html {
         align-items: center;
         gap: 70px;
     }
-    .next svg{
+    .next img{
         margin-top: 5px;
     }
 
 }
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    body, html {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar-left img {
+        width: 200px;
+        height: auto;
+    }
+
+    div ul {
+        flex: 1 1 auto;
+        flex-flow: column wrap;
+        flex-direction: row;
+        text-align: center;
+        gap: 10px;
+    }
+    .icon {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navbar-right {
+        flex-direction: row;
+        justify-content: space-around;
+        width: auto;
+    }
+    .image {
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .image img {
+        width: 700px;
+        height: auto;
+    }
+    .scroll {
+        top: 800px;
+    }
+
+    .grid-main button {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .footer {
+        width: 500px;
+        height: auto;
+        display: flex;
+        flex-flow: row;
+        margin-top: 350px;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+    }
+    .next img {
+        margin-top: 5px;
+    }
+
+    .add-to-cart {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .play-video {
+        margin-right: 25px;
+    }
+    .select-size {
+        margin-right: 25px;
+    }
+
+    .label-sandals {
+        font-size: 60px;
+    }
+
+    .description-sandals {
+        font-size: 18px;
+    }
+
+    .men-sandals {
+        width: 480px;
+    }
+
+    .grid-color {
+        display: flex;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .grid-color button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .flexible {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+}
+
