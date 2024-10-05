@@ -7,8 +7,8 @@
 
 .content {
     position: relative;
-    width: 100%;
     max-width: 1700px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1.5fr 1.2fr;
     font-family: "Helvetica Neue", serif;
@@ -147,7 +147,7 @@ div ul li a {
     background: #ccc0d7;
 }
 
-.men {
+.men-sandals span:first-child {
     font-size: 20px;
     margin-bottom: 13px;
 }
@@ -156,13 +156,13 @@ div ul li a {
     margin-right: 81px;
 }
 
-.label-sandals {
+.men-sandals span:nth-of-type(2) {
     font-size: 72px;
     margin-bottom: 24px;
     font-family: "Unica One", sans-serif;
 }
 
-.description-sandals {
+.men-sandals span:last-child {
     font-size: 20px;
     opacity: 50%;
     line-height: 30px;
@@ -173,7 +173,7 @@ div ul li a {
 }
 
 .item_7, .item_8, .item_9 {
-    margin-top: 386px;
+    margin-top: 430px;
 }
 
 .pre-next {
@@ -191,15 +191,12 @@ div ul li a {
 .add-to-cart span, .pre-next span, .play-video {
     font-size: 24px;
 }
+
 .add-to-cart span {
     font-weight: bold;
 }
 
-.prev span {
-    margin-left: 15%;
-}
-
-.next span {
+.next span, .prev span {
     margin-left: 15%;
 }
 
@@ -216,18 +213,25 @@ div ul li a {
     align-items: center;
     margin-top: 2%;
 }
-
 .social {
     position: absolute;
-    top: 708px;
+    top: 706px;
     right: 10px;
     gap: 30px;
     rotate: 90deg;
 }
 
-.scroll {
+.social img {
+    rotate: -90deg;
+}
+
+.social img:not(:nth-of-type(1)) {
+    margin-left: 24px;
+}
+
+.scroll::before {
+    content: "SCROLL DOWN";
     position: absolute;
-    left: -1%;
     top: 708px;
     rotate: 90deg;
     font-size: 24px;
