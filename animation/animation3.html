@@ -4,111 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
+    <style>
+        .content {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            width: 30vh;
+            height: 50px;
+            margin: 40px 0 0;
+            place-content: center;
+        }
+        .content div {
+            width: 30px;
+            height: 30px;
+            background: lightblue;
+            border-radius: 50%;
+            position: absolute;
+            animation: bounce 1s linear infinite;
+        }
+        .content div:nth-child(1) { left: 0; }
+        .content div:nth-child(2) { left: 40px; animation-delay: -0.5s; }
+        .content div:nth-child(3) { left: 80px; }
+        .content div:nth-child(4) { left: 120px; animation-delay: -0.5s; }
+
+        @keyframes bounce {
+            0%, 100% { top: -10px; }
+            50% { top: 10px; }
+        }
+    </style>
 </head>
 <body>
-<div class="container">
-    <div class="content">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
+<div class="content">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
 </div>
 </body>
-<style>
-    .container {
-        width: 1700px;
-        background: white;
-    }
-    .content {
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        width: 30vh;
-        height: 50px;
-        margin: 40px 0 0 0;
-        place-content: center;
-    }
-    .content div {
-        width: 30px;
-        height: 30px;
-        background-color: lightblue;
-        border-radius: 50%;
-        margin: 0 auto;
-    }
-    .content div:nth-child(1) {
-        animation: animation1 1s infinite;
-        animation-timing-function: linear;
-        position: absolute;
-    }
-
-    .content div:nth-child(3) {
-        animation: animation3 1s infinite;
-        animation-timing-function: linear;
-        position: absolute;
-    }
-    .content div:nth-child(2) {
-        animation: animation2 1s infinite;
-        animation-timing-function: linear;
-        position: absolute;
-    }
-
-    .content div:nth-child(4) {
-        animation: animation4 1s infinite;
-        animation-timing-function: linear;
-        position: absolute;
-    }
-    @keyframes animation1 {
-        0% {
-            top: -10px;
-        }
-        50% {
-            top: 10px;
-        }
-        100% {
-            top: -10px;
-        }
-    }
-    @keyframes animation3 {
-        0% {
-            top: -10px;
-            left: 80px;
-        }
-        50% {
-            top: 10px;
-            left: 80px;
-        }
-        100% {
-            top: -10px;
-            left: 80px;
-        }
-    }
-    @keyframes animation2 {
-        0% {
-            top: 10px;
-            left: 40px;
-        }
-        50% {
-            top: -10px;
-            left: 40px;
-        }
-        100% {
-            top: 10px;
-            left: 40px;
-        }
-    }
-    @keyframes animation4 {
-        0% {
-            top: 10px;
-            left: 120px;
-        }
-        50% {
-            top: -10px;
-            left: 120px;
-        }
-        100% {
-            top: 10px;
-            left: 120px;
-        }
-    }
-</style>
 </html>
