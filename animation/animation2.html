@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <div><img src="./hihi.jpg" alt=""></div>
+        <div><img src="./hihi.jpg" alt=""></div>
+        <div><img src="./hihi.jpg" alt=""></div>
+        <div><img src="./hihi.jpg" alt=""></div>
+        <div><img src="./hihi.jpg" alt=""></div>
+        <div><img src="./hihi.jpg" alt=""></div>
+    </div>
+</div>
+</body>
+<style>
+    .container {
+        width: 100vh;
+        background: white;
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+
+    div img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    div img:hover {
+        transform: scale(1.1);
+        transition: transform 0.6s ease;
+    }
+</style>
+</html>
