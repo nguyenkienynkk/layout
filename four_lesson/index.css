@@ -425,3 +425,28 @@
 }
 /*item 23*/
 /*Responsive*/
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+    .content {
+        display: grid;
+        width: 1600px;
+        margin: 0 auto;
+        font-family: "Rubik", sans-serif;
+        grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+    "item_1  item_1  item_2  item_2  item_3  item_3"
+    "item_4  item_4  item_4  item_5  item_5  item_5"
+    "item_6  item_6  item_6  item_6  item_6  item_6"
+    "item_7  item_7  item_7  item_7  item_7  item_7"
+    "item_8  item_8  item_8  item_8  item_8  item_8"
+    "item_9  item_9  item_9  item_9  item_9  item_9"
+    "item_10 item_10 item_10 item_10 item_10 item_10"
+    "item_11 item_11 item_11 item_11 item_11 item_11"
+    "item_12 item_12 item_13 item_13 item_13 item_13"
+    "item_14 item_14 item_15 item_15 item_15 item_15"
+    "item_16 item_16 item_17 item_17 item_17 item_17"
+    "item_18 item_18 item_19 item_19 item_19 item_19"
+    "item_20 item_20 item_20 item_20 item_20 item_20"
+    "item_21 item_21 item_21 item_23 item_23 item_23"
+    "item_22 item_22 item_22 item_23 item_23 item_23";
+    }
+}
