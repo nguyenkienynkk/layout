@@ -365,6 +365,7 @@ header div:before {
 
 .relation {
   position: relative;
+  margin-bottom: 200px;
 }
 
 .relation .absolution {
@@ -424,39 +425,57 @@ header div:before {
 }
 
 /*Footer*/
-.footer-li {
-  display: grid;
-  grid-template-columns: 2fr 0.5fr 0.5fr 0.5fr;
-  gap: 20px;
-  padding-left: 85px;
+footer {
+  background-color: #f8f9fa;
   padding-top: 200px;
-  margin-top: 200px;
-  background: #F8F8F8;
 }
 
-.footer-li .grid-item h3 {
+footer .footer-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer .footer-wrapper .footer-li {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-li .grid-item,
+.footer-li .flexible {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px;
+}
+
+.footer-li .flexible {
+  flex: 2;
+  text-align: left;
+}
+
+.grid-item h3 {
   font-size: 18px;
   margin-bottom: 10px;
   text-align: left;
   color: #0B132A;
 }
 
-.footer-li .grid-item ul {
+.grid-item ul {
   list-style-type: none;
   padding: 0;
 }
 
-.footer-li .grid-item ul li {
+.grid-item ul li {
   margin: 15px 0;
 }
 
-.footer-li .grid-item ul li a {
+.grid-item ul li a {
   text-decoration: none;
   color: #4F5665;
   font-size: 16px;
 }
 
-.footer-li .grid-item ul li a:hover {
+.grid-item ul li a:hover {
   color: #555;
 }
 

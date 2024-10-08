@@ -1,0 +1,26 @@
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin box-shadow($color, $blur) {
+  box-shadow: 0 0 $blur $color;
+}
+@mixin display-center($content) {
+  display: flex;
+  align-items: center;
+  justify-content: $content;
+}
+@mixin display($content) {
+  display: flex;
+  justify-content: $content;
+}
+@mixin flex-direction($row-col) {
+  display: flex;
+  flex-direction: $row-col;
+}
+@mixin grid-center {
+  display: grid;
+  place-items: center;
+}
