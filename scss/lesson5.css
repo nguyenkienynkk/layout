@@ -341,12 +341,12 @@ header div:before {
   position: absolute;
   top: 115%;
   left: 10%;
-  display: flex;
   border-radius: 10px;
   max-width: 1140px;
   height: 233px;
   width: 100%;
   margin-top: 30px;
+  display: flex;
   align-items: center;
   justify-content: space-evenly;
   box-shadow: 0 0 7px #a38b8b;
